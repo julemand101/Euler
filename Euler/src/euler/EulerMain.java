@@ -12,7 +12,7 @@ public class EulerMain {
 		ArrayList<Problem> problemList = new ArrayList<Problem>();
 		HashMap<Problem, Boolean> solutionFound = new HashMap<Problem, Boolean>();
 		HashMap<Problem, Long> executionTime = new HashMap<Problem, Long>();
-		String debugProblem = "001"; //Ignore if 000.
+		String debugProblem = "000"; //Ignore if 000.
 		System.out.println("#############################");
 		System.out.println("#  Welcome to Euler-admin.  #");
 		System.out.println("#          made by          #");

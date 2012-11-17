@@ -22,7 +22,7 @@ public abstract class Problem {
         if (line.equals("")) {
           sb.append("\n\n");
         } else {
-          sb.append(line);
+          sb.append(line.replaceAll("§", "\n"));
         }
       }
 

@@ -193,7 +193,7 @@ public class EulerMain {
 				word.append(chars[i]);
 
 				if (chars[i] == ' ') {
-					if ((line.length() + word.length()) > len) {
+					if ((line.length() + word.length()) > len && line.length() > 0) {
 						lines.add(line.toString());
 						line.delete(0, line.length());
 					}

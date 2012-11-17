@@ -2,16 +2,12 @@ package euler.problems;
 
 import java.util.ArrayList;
 
+import euler.Problem;
+
 public class Problem003 extends Problem {
 
 	public int getID() {
 		return 3;
-	}
-
-	public String getDescription() {
-		return "The prime factors of 13195 are 5, 7, 13 and 29.\n\n" + 
-		
-		"What is the largest prime factor of the number 600851475143 ?";
 	}
 
 	public double getAnswer() {

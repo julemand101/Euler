@@ -1,28 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem014 extends Problem {
 
 	public int getID() {
 		return 14;
-	}
-
-	public String getDescription() {
-		return "The following iterative sequence is defined for the set of positive integers:\n\n" + 
-		
-		"\tn -> n/2 (n is even)\n" +
-		"\tn -> 3n + 1 (n is odd)\n\n" +
-		
-		"Using the rule above and starting with 13, we generate the following sequence:\n\n" +
-		
-		"\t13->40->20->10->5->16->8->4->2->1\n\n" +
-		
-		"It can be seen that this sequence (starting at 13 and finishing at 1) contains " + 
-		"10 terms. Although it has not been proved yet (Collatz Problem), it is thought " + 
-		"that all starting numbers finish at 1.\n\n" +
-		
-		"Which starting number, under one million, produces the longest chain?\n\n" +
-		
-		"NOTE: Once the chain starts the terms are allowed to go above one million.";
 	}
 
 	public double getAnswer() {

@@ -1,13 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem067 extends Problem {
 
 	public int getID() {
 		return 67;
-	}
-
-	public String getDescription() {
-		return "To complex. See: http://projecteuler.net/index.php?section=problems&id=67";
 	}
 
 	public double getAnswer() {

@@ -1,16 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem015 extends Problem {
 
 	public int getID() {
 		return 15;
-	}
-
-	public String getDescription() {
-		return "Starting in the top left corner of a 22 grid, there are 6 routes " + 
-		"(without backtracking) to the bottom right corner.\n\n" +
-		
-		"How many routes are there through a 2020 grid?";
 	}
 
 	public double getAnswer() {

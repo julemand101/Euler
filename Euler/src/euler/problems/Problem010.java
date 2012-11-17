@@ -1,15 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem010 extends Problem {
 
 	public int getID() {
 		return 10;
-	}
-
-	public String getDescription() {
-		return "The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.\n\n" +
-		
-		"Find the sum of all the primes below two million.";
 	}
 
 	public double getAnswer() {

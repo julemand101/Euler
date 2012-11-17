@@ -4,7 +4,6 @@ import java.io.*;
 import java.text.DecimalFormat;
 import java.util.*;
 
-import euler.problems.Problem;
 
 public class EulerMain {
 

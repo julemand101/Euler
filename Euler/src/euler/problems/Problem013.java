@@ -2,6 +2,8 @@ package euler.problems;
 
 import java.math.BigInteger;
 
+import euler.Problem;
+
 public class Problem013 extends Problem {
 
 	public int getID() {
@@ -11,8 +13,7 @@ public class Problem013 extends Problem {
 	public String getDescription() {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("Work out the first ten digits of the sum of the following " + 
-				  "one-hundred 50-digit numbers.\n\n");
+		sb.append(super.getDescription() + "\n\n");
 		
 		for (String number : numbers) {
 			sb.append(number + "\n");

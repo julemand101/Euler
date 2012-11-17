@@ -1,18 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem004 extends Problem {
 
 	public int getID() {
 		return 4;
-	}
-
-	public String getDescription() {
-		return "A palindromic number reads the same both ways. " + 
-		"The largest palindrome made from the product of two " + 
-		"2-digit numbers is 9009 = 91 x 99.\n\n" + 
-		
-		"Find the largest palindrome made from the product of " 
-		+ "two 3-digit numbers.";
 	}
 
 	public double getAnswer() {

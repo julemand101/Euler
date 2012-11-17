@@ -2,16 +2,12 @@ package euler.problems;
 
 import java.math.BigInteger;
 
+import euler.Problem;
+
 public class Problem020 extends Problem {
 
 	public int getID() {
 		return 20;
-	}
-
-	public String getDescription() {
-		return "n! means n * (n - 1) * ... * 3 * 2 * 1\n\n" +
-		
-		"Find the sum of the digits in the number 100!";
 	}
 
 	public double getAnswer() {

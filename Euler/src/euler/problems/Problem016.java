@@ -2,16 +2,12 @@ package euler.problems;
 
 import java.math.BigInteger;
 
+import euler.Problem;
+
 public class Problem016 extends Problem {
 
 	public int getID() {
 		return 16;
-	}
-
-	public String getDescription() {
-		return "2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n\n" +
-		
-		"What is the sum of the digits of the number 2^1000?";
 	}
 
 	public double getAnswer() {

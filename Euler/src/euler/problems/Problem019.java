@@ -1,24 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem019 extends Problem {
 
 	public int getID() {
 		return 19;
-	}
-
-	public String getDescription() {
-		return "You are given the following information, but you may prefer to do some research for yourself.\n\n" + 
-		
-		"* 1 Jan 1900 was a Monday.\n" +
-		"* Thirty days has September,\n" +
-		"  April, June and November.\n" + 
-		"  All the rest have thirty-one,\n" + 
-		"  Saving February alone,\n" +
-		"  Which has twenty-eight, rain or shine.\n" + 
-		"  And on leap years, twenty-nine.\n" + 
-		"* A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.\n\n" +
-		
-		"How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?";
 	}
 
 	public double getAnswer() {

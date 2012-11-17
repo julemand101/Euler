@@ -1,18 +1,11 @@
 package euler.problems;
 
+import euler.Problem;
+
 public class Problem005 extends Problem {
 
 	public int getID() {
 		return 5;
-	}
-
-	public String getDescription() {
-		return "2520 is the smallest number that can be divided " +
-		"by each of the numbers from 1 to 10 without any " +
-		"remainder.\n\n" + 
-		
-		"What is the smallest positive number that is evenly " +
-		"divisible by all of the numbers from 1 to 20?";
 	}
 
 	public double getAnswer() {

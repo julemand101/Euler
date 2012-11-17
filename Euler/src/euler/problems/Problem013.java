@@ -2,7 +2,7 @@ package euler.problems;
 
 import java.math.BigInteger;
 
-public class Problem013 implements IProblem {
+public class Problem013 extends Problem {
 
 	public int getID() {
 		return 13;

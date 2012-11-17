@@ -1,6 +1,6 @@
 package euler.problems;
 
-public class Problem006 implements IProblem {
+public class Problem006 extends Problem {
 
 	public int getID() {
 		return 6;

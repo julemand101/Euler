@@ -4,15 +4,15 @@ import java.io.*;
 import java.text.DecimalFormat;
 import java.util.*;
 
-import euler.problems.IProblem;
+import euler.problems.Problem;
 
 public class EulerMain {
 
 	public static void main(String[] args) {
-		ArrayList<IProblem> problemList = new ArrayList<IProblem>();
-		HashMap<IProblem, Boolean> solutionFound = new HashMap<IProblem, Boolean>();
-		HashMap<IProblem, Long> executionTime = new HashMap<IProblem, Long>();
-		String debugProblem = "000"; //Ignore if 000.
+		ArrayList<Problem> problemList = new ArrayList<Problem>();
+		HashMap<Problem, Boolean> solutionFound = new HashMap<Problem, Boolean>();
+		HashMap<Problem, Long> executionTime = new HashMap<Problem, Long>();
+		String debugProblem = "001"; //Ignore if 000.
 		System.out.println("#############################");
 		System.out.println("#  Welcome to Euler-admin.  #");
 		System.out.println("#          made by          #");
@@ -50,7 +50,7 @@ public class EulerMain {
 			problemList = getProblems(fileNames);
 		}
 
-		for (IProblem problem : problemList) {
+		for (Problem problem : problemList) {
 			long startTime, endTime;
 			
 			System.out.println("--------------------------------------------------------------------------------");
@@ -96,7 +96,7 @@ public class EulerMain {
 			System.out.println("----------------------------------");
 			System.out.println("| Nr. | Correct | Execution time |");
 			
-			for (IProblem problem : problemList) {
+			for (Problem problem : problemList) {
 				if (solutionFound.get(problem)) {
 					System.out.printf("| %03d |   YES   | %,9d msec |\n", problem.getID(), executionTime.get(problem));
 				} else {
@@ -131,17 +131,17 @@ public class EulerMain {
 		return fileNames;
 	}
 	
-	static ArrayList<IProblem> getProblems(String folderPath) {
+	static ArrayList<Problem> getProblems(String folderPath) {
 		return getProblems(getClassNames(folderPath));
 	}
 	
-	static ArrayList<IProblem> getProblems(List<String> classNames) {
-		ArrayList<IProblem> problems = new ArrayList<IProblem>();
+	static ArrayList<Problem> getProblems(List<String> classNames) {
+		ArrayList<Problem> problems = new ArrayList<Problem>();
 		
 		for (String problemClassName : classNames) {
 			try {
 				System.out.println("Loading: " + problemClassName);
-				problems.add((IProblem)ClassLoader.getSystemClassLoader().loadClass(problemClassName).newInstance());
+				problems.add((Problem)ClassLoader.getSystemClassLoader().loadClass(problemClassName).newInstance());
 			} catch (ClassNotFoundException e) {
 				System.err.println("Class not found: " + problemClassName);
 				e.printStackTrace();

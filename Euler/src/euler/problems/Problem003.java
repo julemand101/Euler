@@ -2,7 +2,7 @@ package euler.problems;
 
 import java.util.ArrayList;
 
-public class Problem003 implements IProblem {
+public class Problem003 extends Problem {
 
 	public int getID() {
 		return 3;

@@ -10,7 +10,7 @@ public abstract class Problem {
 
   public String getDescription() {
     Class<? extends Problem> c = getClass();
-    String txtPath = "resources/" + c.getSimpleName() + ".txt";
+    String txtPath = "descriptions/" + c.getSimpleName() + ".txt";
 
     InputStream stream = c.getResourceAsStream(txtPath);
 
